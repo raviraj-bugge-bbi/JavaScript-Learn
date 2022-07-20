@@ -1,6 +1,7 @@
 'use strict';
 
 console.log("---LECTURE: Functions---");
+
 function describeCountry(country, population, capitalCity){
     const string = `${country} has ${population} million people and its capital city is ${capitalCity}`;
     return string;
