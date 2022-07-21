@@ -14,3 +14,11 @@ console.log(italyCountry);
 
 let japanCountry = describeCountry("Japan", "13", "Tokyo");
 console.log(japanCountry);
+
+function fruitProcessor(apple,oranges){
+    const string = `apple juice made up of ${apple} apples and ${oranges} oranges`;
+    return string;
+}
+
+let juice = fruitProcessor(5,3);
+console.log(juice);
