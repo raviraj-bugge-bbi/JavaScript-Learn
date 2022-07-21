@@ -1,1 +1,1 @@
-# JavaScript-Learn Fundamental part - 2
+# JavaScript-Learn Fundamental part - 1
