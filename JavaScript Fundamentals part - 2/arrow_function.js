@@ -22,3 +22,4 @@ let retirementAge = birtYear => {
 
 let yearsLeft = retirementAge(1999);
 console.log(yearsLeft);
+
