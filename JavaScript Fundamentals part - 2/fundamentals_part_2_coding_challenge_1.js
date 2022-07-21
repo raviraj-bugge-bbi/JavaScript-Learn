@@ -8,10 +8,10 @@ let koalaAvg = calcAverage(65,54,49);
 
 function checkWinner(avgDolhins, avgKoalas) {
     if(avgDolhins>= avgKoalas * 2) {
-        console.log("Team Dolphines win!");
+        console.log(`Team Dolphines win! (${dolphineAvg} vs ${koalaAvg}`);
     }
     else{
-        console.log("Team Koalas win!")
+        console.log(`Team Koalas win! (${koalaAvg} vs ${dolphineAvg})`);
     }
 }
 
