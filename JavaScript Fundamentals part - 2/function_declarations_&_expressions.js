@@ -17,6 +17,8 @@ console.log(italyPopulation);
 let roamPopulation = percentageOfWorld1(130);
 console.log(roamPopulation);
 
+//------------------------------------------------------------------------------
+
 let percentageOfWorld2 = function(population){
     return (population/7900)*100;
 }
@@ -29,3 +31,12 @@ console.log(italyPopulation);
 
 roamPopulation = percentageOfWorld2(130);
 console.log(roamPopulation);
+
+//-------------------------------------------------------------------------------
+
+const calculator = function numAdd(numOne,numTwo){
+    return numOne + numTwo;
+}
+
+let add = calculator(5,3);
+console.log(add);
