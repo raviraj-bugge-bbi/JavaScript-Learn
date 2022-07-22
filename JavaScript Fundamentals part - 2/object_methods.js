@@ -37,5 +37,8 @@ const myCountry1 = {
     }
 };
 
+
+
 console.log(myCountry1.describe());
 console.log(myCountry1.checkIsland());
+console.log(myCountry1.isIsland);
