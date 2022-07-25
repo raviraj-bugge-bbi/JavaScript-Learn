@@ -2,15 +2,10 @@
 
 console.log("----LECTURE: Looping Backwards and Loops in Loops----");
 
-let example = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
-let listOfNeighbours = [];
+let listOfNeighbours  = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
 
-for(let i = 0;i<3;i++){
-    for(let j = i;j<=i;j++){
-        listOfNeighbours[j] = example[i];
+for(i=0;i<listOfNeighbours.length;i++){
+    for(j=0;j<listOfNeighbours[i].length;j++){
+        console.log(`neighbour : ${listOfNeighbours[i][j]}`);
     }
-}
-
-for(let i = 0;i<=listOfNeighbours.length;i++){
-    console.log(listOfNeighbours[i]);
 }
