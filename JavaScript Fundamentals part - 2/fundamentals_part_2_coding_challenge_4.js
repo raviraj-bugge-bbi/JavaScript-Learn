@@ -25,6 +25,4 @@ function calcAverage1(arr){
     return avg;
 }
 
-calcAverage1();
 console.log(calcAverage1(total1));
-console.log(calcAverage.arr);
