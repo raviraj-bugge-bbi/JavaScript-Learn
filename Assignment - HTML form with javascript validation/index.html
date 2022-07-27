@@ -17,6 +17,14 @@
             margin-top: 20px;
             margin-left: 43%;
         }
+
+        .efname{
+            color:white;
+        }
+        .elname{
+            color: white;
+        }
+
     </style>
 </head>
 <body>
@@ -27,22 +35,27 @@
             <tr>
                 <td> <label for="fname">First Name:</label> </td>
                 <td> <input type="text" id="fname" placeholder="First Name"> </td>
+                <td> <p class="efname">this is invalid</p> </td>
             </tr>
             <tr>
                 <td> <label for="lname">Last Name:</label> </td>
                 <td> <input type="text" id="lname"  placeholder="Last Name"> </td>
+                <td> <small class="elname">Enter valid last Name</small> </td>
             </tr>
             <tr>
                 <td> <label for="contact">Contact No:</label> </td>
-                <td> <input type="tel" id="contact" pattern="[+91] [0-9]{5} [0-9]{5}"> </td>
+                <td> <input type="text" id="contact" placeholder="+91 ----- -----"> </td>
+                <td>  </td>
             </tr>
             <tr>
                 <td> <label for="email">Email</label> </td>
-                <td> <input type="email" id="email" placeholder="Email"> </td>
+                <td> <input type="text" id="email" placeholder="Email"> </td>
+                <td>  </td>
             </tr>
             <tr>
                 <td> <input type="submit" formaction="next.html" value="SUBMIT FORM" onclick="return validDetails()"> </td>
                 <td> <input type="submit" value="VIEW JSON"> </td>
+                <td>  </td>
             </tr>
         </table>
     </form>
