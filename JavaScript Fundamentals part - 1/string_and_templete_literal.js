@@ -1,7 +1,7 @@
 const countryName = "Portugal";
 const continentName = "Europe";
 const newPopulation = 11;
-const languageName = "potruguese"
+const languageName = "potruguese";
 
 console.log(description);
 

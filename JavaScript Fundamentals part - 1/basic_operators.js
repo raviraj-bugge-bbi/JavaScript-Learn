@@ -1,5 +1,5 @@
 let india = 1417173173;
-let splitIndia = india/2;
+let splitIndia = india / 2;
 console.log(splitIndia);
 
 splitIndia++;
@@ -11,7 +11,8 @@ let isIndiaLarge = Finland > india;
 console.log(isIndiaLarge);
 
 let avgPopulation = 3300000;
-console.log(avgPopulation>india);
+console.log(avgPopulation > india);
 
-let description = 'Portugal is in Europe, and its 11 million people speak portuguese';
+let description =
+  "Portugal is in Europe, and its 11 million people speak portuguese";
 console.log(description);

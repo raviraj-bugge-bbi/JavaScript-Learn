@@ -1,4 +1,4 @@
-let countryPopulation = 3300000
+let countryPopulation = 3300000;
 
 let condition = countryPopulation >= 3300000 ? "above" : "below";
 
