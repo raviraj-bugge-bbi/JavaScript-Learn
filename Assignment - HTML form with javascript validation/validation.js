@@ -6,7 +6,7 @@ var regexChar = /[a-zA-Z]/;
 var regexCap = /[A-Z]/;
 var regexAtDot = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/g;
 
-let valid;
+var errorFname = document.getElementsByClassName("errorfname")[0].styl
 
 function validDetails() {
   var fName = document.getElementById("fname").value;
@@ -20,12 +20,12 @@ function validDetails() {
 
   if (fName == "") {
     alert("name field cannot be empty");
-    eFname.style.color = "red";
     return false;
   } else if (regexNotNumAndChar.test(fName)) {
     alert("name can not be a number or special character");
     return false;
   } else if (fName.length == 1) {
+
     alert("name can not be a single character");
     return false;
   }
@@ -63,16 +63,14 @@ function validDetails() {
 
   /////////////////////////////////////////////////////////////////
   /*---------------------email validation------------------------*/
-
-  if (email == "") {
+  else if (email == "") {
     alert("Please enter email");
     return false;
   } else if (regexCap.test(email)) {
     alert("email don't have capital letters");
     return false;
-  } else if (!regexAtDot.test(email)){
+  } else if (!regexAtDot.test(email)) {
     alert("Enter valid email");
     return false;
   }
-
 }
