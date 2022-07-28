@@ -26,7 +26,7 @@
         color: white;
       }
 
-      .errorcontact{
+      .errorcontact {
         color: white;
       }
 
@@ -41,29 +41,34 @@
       <table>
         <tr>
           <td><label for="fname">First Name:</label></td>
-          <td><input type="text" id="fname" placeholder="First Name" /></td>
-          <td> <em class = "errorfname">Invalid Data</em> </td>
+          <td><input type="text" id="fname" placeholder="First Name"/></td>
+          <td><em class="errorfname">Invalid Data</em></td>
         </tr>
         <tr>
           <td><label for="lname">Last Name:</label></td>
           <td><input type="text" id="lname" placeholder="Last Name" /></td>
-          <td> <em class = "errorlname">Invalid Data</em> </td>
+          <td><em class="errorlname">Invalid Data</em></td>
         </tr>
         <tr>
           <td><label for="contact">Contact No:</label></td>
           <td><input type="text" id="contact" placeholder="+91 ----- -----" /></td>
-          <td> <em class = "errorcontact">Invalid Data</em> </td>
+          <td><em class="errorcontact">Invalid Data</em></td>
         </tr>
         <tr>
           <td><label for="email">Email</label></td>
           <td><input type="text" id="email" placeholder="Email" /></td>
-          <td> <em class = "erroremail">Invalid Data</em> </td>
+          <td><em class="erroremail">Invalid Data</em></td>
         </tr>
         <tr>
           <td><input type="submit" formaction="next.html" value="SUBMIT FORM" onclick="return validDetails()"/></td>
-          <td><input type="submit" value="VIEW JSON" /></td>
+          <td><input type="button" value="VIEW JSON" onclick="return jsonFile()" /></td>
         </tr>
       </table>
     </form>
+
+    <div id="jsondata">
+
+    </div>
+
   </body>
 </html>
