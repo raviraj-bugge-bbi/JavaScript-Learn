@@ -189,5 +189,16 @@ function jsonFile() {
   // document.getElementById("td33").innerHTML = "Contact No.:";
   // document.getElementById("td44").innerHTML = "Email:";
 
-  document.getElementById("tablecss").style.border = "1px solid black";
+  //document.getElementById("tablecss").style.border = "1px solid black";
 }
+
+// function darkMode() {
+//   document.getElementById("body").style.backgroundColor = "black";
+//   document.getElementById("body").style.color = "white";
+// }
+
+// function lightMode() {
+//   document.getElementById("body").style.backgroundColor = "white";
+//   document.getElementById("body").style.color = "black";
+
+// }
