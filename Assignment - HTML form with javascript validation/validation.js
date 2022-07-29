@@ -48,7 +48,7 @@ function validDetails() {
     return false;
   }
 
-  /////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
   /*----------------contact no: validation------------------------*/
   else if (contact == "") {
     document.getElementById("errorlname").style.color = "white";
@@ -92,7 +92,7 @@ function validDetails() {
 /////////////////////////////////////////////////////////////////////
 /*                            json                                 */
 /////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
 
 function jsonFile() {
   var fName = document.getElementById("fname").value;
@@ -117,8 +117,8 @@ function jsonFile() {
     return false;
   }
 
-  // /////////////////////////////////////////////////////////////////
-  // /*----------------last name validation------------------------*/
+  //////////////////////////////////////////////////////////////////
+  //*----------------last name validation------------------------*//
   else if (lName == "") {
     alert("last name field cannot be empty");
     document.getElementById("errorlname").style.color = "red";
@@ -133,7 +133,7 @@ function jsonFile() {
     return false;
   }
 
-  /////////////////////////////////////////////////////////////////
+  //////////////////////////////////////////////////////////////////
   /*----------------contact no: validation------------------------*/
   else if (contact == "") {
     alert("Enter Contact no:");
@@ -173,17 +173,22 @@ function jsonFile() {
     "First Name": document.getElementById("fname").value,
     "Last Name": document.getElementById("lname").value,
     "Contact No:": document.getElementById("contact").value,
-    Email: document.getElementById("email").value,
+    "Email": document.getElementById("email").value,
   };
 
-  document.getElementById("td1").innerHTML = userDetails["First Name"];
-  document.getElementById("td2").innerHTML = userDetails["Last Name"];
-  document.getElementById("td3").innerHTML = userDetails["Contact No:"];
-  document.getElementById("td4").innerHTML = userDetails["Email"];
-  document.getElementById("td11").innerHTML = "First Name:";
-  document.getElementById("td22").innerHTML = "Second Name:";
-  document.getElementById("td33").innerHTML = "Contact No.:";
-  document.getElementById("td44").innerHTML = "Email:";
+  for (var i in userDetails) {
+    document.getElementById("").innerHTML += i + ` : ` + userDetails[i];
+    document.getElementById("tlkv").innerHTML += i + ` : ` + userDetails[i];
+  }
+
+  // document.getElementById("td1").innerHTML = userDetails["First Name"];
+  // document.getElementById("td2").innerHTML = userDetails["Last Name"];
+  // document.getElementById("td3").innerHTML = userDetails["Contact No:"];
+  // document.getElementById("td4").innerHTML = userDetails["Email"];
+  // document.getElementById("td11").innerHTML = "First Name:";
+  // document.getElementById("td22").innerHTML = "Second Name:";
+  // document.getElementById("td33").innerHTML = "Contact No.:";
+  // document.getElementById("td44").innerHTML = "Email:";
 
   document.getElementById("tablecss").style.border = "1px solid black";
 }
