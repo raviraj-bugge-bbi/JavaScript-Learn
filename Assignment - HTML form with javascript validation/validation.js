@@ -177,8 +177,7 @@ function jsonFile() {
   };
 
   for (var i in userDetails) {
-    document.getElementById("").innerHTML += i + ` : ` + userDetails[i];
-    document.getElementById("tlkv").innerHTML += i + ` : ` + userDetails[i];
+    document.getElementById("tjsonview").innerHTML += i + ` : ` + userDetails[i] + `<br>`;
   }
 
   // document.getElementById("td1").innerHTML = userDetails["First Name"];
