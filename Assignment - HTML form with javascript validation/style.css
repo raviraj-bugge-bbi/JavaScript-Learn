@@ -1,0 +1,23 @@
+* {
+    font-family: helvetica;
+  }
+  
+  body h3 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  form #form1 {
+    margin-top: 20px;
+    margin-left: 43%;
+  }
+
+  #errorfname, #errorlname, #errorcontact, #erroremail {
+    color: white;
+    visibility:hidden;
+  }
+
+  div #jsondata {
+    padding-top: 50px;
+    margin-left: 44%;
+  }

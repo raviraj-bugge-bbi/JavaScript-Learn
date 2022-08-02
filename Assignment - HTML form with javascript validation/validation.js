@@ -113,14 +113,16 @@ function validDetails() {
 /////////////////////////////////////////////////////////////////////
 
 function jsonFile() {
-   var fName = document.getElementById("fname").value;
+  var fName = document.getElementById("fname").value;
   var lName = document.getElementById("lname").value;
   var contact = document.getElementById("contact").value;
   var email = document.getElementById("email").value;
 
   /////////////////////////////////////////////////////////////////
   /*----------------first name validation------------------------*/
-
+  if(validDetails()){
+    
+  }
   if (fName == "") {
     alert("name field cannot be empty");
     document.getElementById("errorfname").style.color = "red";
@@ -213,11 +215,12 @@ function jsonFile() {
     "First Name": document.getElementById("fname").value,
     "Last Name": document.getElementById("lname").value,
     "Contact No:": document.getElementById("contact").value,
-    "Email:": document.getElementById("email").value
+    "Email:": document.getElementById("email").value,
   };
 
   for (var i in userDetails) {
-    document.getElementById("tjsonview").innerHTML += i + ` : ` + userDetails[i] + `<br>`;
+    document.getElementById("tjsonview").innerHTML +=
+      i + ` : ` + userDetails[i] + `<br>`;
   }
 
   document.getElementById("td1").innerHTML = userDetails["First Name"];
@@ -235,9 +238,14 @@ function jsonFile() {
 function darkMode() {
   document.getElementById("body").style.backgroundColor = "black";
   document.getElementById("body").style.color = "white";
+  document.getElementById("next").style.backgroundColor = "black";
+  document.getElementById("next").style.color = "white";
 }
 
 function lightMode() {
   document.getElementById("body").style.backgroundColor = "white";
   document.getElementById("body").style.color = "black";
+  document.getElementById("next").style.backgroundColor = "white";
+  document.getElementById("next").style.color = "white";
 }
+
