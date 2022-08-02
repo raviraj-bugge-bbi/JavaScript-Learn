@@ -1,23 +1,31 @@
 * {
-    font-family: helvetica;
-  }
-  
-  body h3 {
-    text-align: center;
-    font-size: 30px;
-  }
+  font-family: helvetica;
+}
 
-  form #form1 {
-    margin-top: 20px;
-    margin-left: 43%;
-  }
+body div h3 {
+  text-align: center;
+  font-size: 30px;
+}
 
-  #errorfname, #errorlname, #errorcontact, #erroremail {
-    color: white;
-    visibility:hidden;
-  }
+body div form {
+  margin-top: 20px;
+  margin-left: 43%;
+}
 
-  div #jsondata {
-    padding-top: 50px;
-    margin-left: 44%;
-  }
+#errorfname,
+#errorlname,
+#errorcontact,
+#erroremail {
+  color: white;
+  visibility: hidden;
+}
+
+body #jsondata {
+  padding-top: 50px;
+  margin-left: 44%;
+}
+
+body h1 {
+  text-align: center;
+  padding-top: 6cm;
+}

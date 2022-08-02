@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form Validation</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="validation.js"></script>
-    <noscript><a href="noscript.html">your browser does not support javascript</a></noscript>
-  </head>
-  <body id="body">
-    <h3>Sign-Up Form</h3>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="refresh">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="validation.js"></script>
+  <noscript>
+    <h1>Your browser does not support javascript</h1>
+    <style>
+      #hide {
+        display: none;
+      }
+    </style>
+  </noscript>
+</head>
+
+<body id="body">
+  <div id="hide">
+    <h3 id=>Sign-Up Form</h3>
     <form id="form1">
       <table>
         <tr>
@@ -37,30 +48,31 @@
         </tr>
         <tr>
           <td>
-            <input
-              type="submit"
-              formaction="next.html"
-              value="SUBMIT FORM"
-              onclick="return validDetails()"
-            />
+            <input type="submit" formaction="next.html" value="SUBMIT FORM" onclick="return validDetails()" />
           </td>
           <td>
-            <input
-              type="button"
-              value="VIEW JSON"
-              onclick="jsonFile()" />
+            <input type="button" value="VIEW JSON" onclick="jsonFile()" />
           </td>
         </tr>
-        <tr><td><input type="button" value="Dark Mode" onclick="darkMode()" ondblclick="lightMode()"></td></tr>
-      </table>
-    </form>
-
-    <div id="jsondata">
-      <table id="tablecss">
         <tr>
-          <td id="tjsonview"></td>
+          <td>
+            <input type="button" value="Dark Mode" onclick="darkMode()" ondblclick="lightMode()"/>
+          </td>
+          <td>
+            <input type="button" value="clear JSON view" id="clearClick"/>
+          </td>
         </tr>
       </table>
-    </div>
-  </body>
+    </form>
+  </div>
+
+  <div id="jsondata">
+    <table id="tablecss">
+      <tr>
+        <td id="tjsonview"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+
 </html>
