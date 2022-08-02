@@ -130,6 +130,7 @@ const clearClick = document.getElementById("clearClick");
 clearClick.addEventListener("submit",clearJsonView);
 
 function clearJsonView(){
-  document.getElementById("tjsonview").textContent = " ";
+  document.getElementById("tjsonview").textContent = "";
+  console.log(e.type);
 }
 
