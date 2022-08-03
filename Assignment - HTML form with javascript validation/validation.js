@@ -1,5 +1,6 @@
 `use strict`;
 
+
 var regexNotNumAndChar = /[0-9!@#\  $%\^\&*\)\(+=._-]/;
 var regexContact = /[+][9][1]\s[7-9][0-9]{4}\s[0-9]{5}/;
 var regexChar = /[a-zA-Z]/;
@@ -88,7 +89,7 @@ function validDetails() {
 }
 
 /////////////////////////////////////////////////////////////////////
-/*                            json                                 */
+/*                            JSON                                 */
 /////////////////////////////////////////////////////////////////////
 
 function jsonFile() {
@@ -101,38 +102,45 @@ function jsonFile() {
     };
 
     for (var i in userDetails) {
-      document.getElementById("tjsonview").innerHTML +=
+      document.getElementById("tJsonView").innerHTML +=
         i + ` : ` + userDetails[i] + `<br>`;
     }
   }
 }
 
 ///////////////////////////////////////////////////////////////////
-/*                        Dark & Light Mode                      */
+/*                        DARK MODE TOGGLE                       */
 ///////////////////////////////////////////////////////////////////
+
+sessionStorage.setItem('flag','0');
 
 function darkMode() {
-  document.getElementById("body").style.backgroundColor = "black";
-  document.getElementById("body").style.color = "white";
-}
-
-function lightMode() {
-  document.getElementById("body").style.backgroundColor = "white";
-  document.getElementById("body").style.color = "black";
+  let flag = sessionStorage.getItem('flag');
+  if(flag == 0){
+    document.getElementById("body").style.backgroundColor = "black";
+    document.getElementById("body").style.color = "white";
+    document.getElementById("dbtn").value = "Light Mode";
+    sessionStorage.setItem('flag','1');
+  }else{
+    document.getElementById("body").style.backgroundColor = "white";
+    document.getElementById("body").style.color = "black";
+    document.getElementById("dbtn").value = "Dark Mode";
+    sessionStorage.setItem('flag','0');
+  }
 }
 
 ///////////////////////////////////////////////////////////////////
-/*                        clear json view                        */
+/*                        CLEAR JSON VIEW                        */
 ///////////////////////////////////////////////////////////////////
 
-document.addEventListener('DOMContentLoaded',clearJsonView);
+document.addEventListener('DOMContentLoaded', clearJsonView);
 
-function clearJsonView(){
+function clearJsonView() {
 
   const listenClick = document.getElementById('clearClick');
 
-  listenClick.addEventListener('click',function clearjs(e){
-    document.getElementById("tjsonview").textContent = "";
+  listenClick.addEventListener('click', function clearJs(e) {
+    document.getElementById("tJsonView").textContent = "";
     e.preventDefault();
   });
 }

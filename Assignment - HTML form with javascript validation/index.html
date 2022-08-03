@@ -42,24 +42,24 @@
           <td><em id="errorcontact">Invalid Data</em></td>
         </tr>
         <tr>
-          <td><label for="email">Email</label></td>
+          <td><label for="email">Email:</label></td>
           <td><input type="text" id="email" placeholder="Email" /></td>
           <td><em id="erroremail">Invalid Data</em></td>
         </tr>
         <tr>
           <td>
-            <input type="submit" formaction="next.html" value="SUBMIT FORM" onclick="return validDetails()" />
+            <input type="submit" formaction="next.html" value="Submit Form" onclick="return validDetails()" class="btn" />
           </td>
           <td>
-            <input type="button" value="VIEW JSON" onclick="jsonFile()" />
+            <input type="button" value="View JSON" onclick="jsonFile()" class="btn" />
           </td>
         </tr>
         <tr>
           <td>
-            <input type="button" value="Dark Mode" onclick="darkMode()" ondblclick="lightMode()"/>
+            <input type="button" value="Dark Mode" onclick="darkMode()" id="dbtn" class="btn"/>
           </td>
           <td>
-            <input type="submit" value="clear JSON view" id="clearClick"/>
+            <input type="submit" value="Clear JSON View" id="clearClick" class="btn"/>
           </td>
         </tr>
       </table>
@@ -69,7 +69,7 @@
   <div id="jsondata">
     <table id="tablecss">
       <tr>
-        <td id="tjsonview"></td>
+        <td id="tJsonView"></td>
       </tr>
     </table>
   </div>
