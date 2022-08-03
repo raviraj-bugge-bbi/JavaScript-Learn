@@ -127,11 +127,11 @@ function lightMode() {
 
 document.addEventListener('DOMContentLoaded',clearJsonView);
 
-function clearJsonView(e){
+function clearJsonView(){
 
   const listenClick = document.getElementById('clearClick');
 
-  listenClick.addEventListener('click',function clearjs(){
+  listenClick.addEventListener('click',function clearjs(e){
     document.getElementById("tjsonview").textContent = "";
     e.preventDefault();
   });
