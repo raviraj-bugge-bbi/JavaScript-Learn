@@ -125,12 +125,14 @@ function lightMode() {
 /*                        clear json view                        */
 ///////////////////////////////////////////////////////////////////
 
-const clearClick = document.getElementById("clearClick");
+document.addEventListener('DOMContentLoaded',clearJsonView);
 
-clearClick.addEventListener("submit",clearJsonView);
+function clearJsonView(e){
 
-function clearJsonView(){
-  document.getElementById("tjsonview").textContent = "";
-  console.log(e.type);
+  const listenClick = document.getElementById('clearClick');
+
+  listenClick.addEventListener('click',function clearjs(){
+    document.getElementById("tjsonview").textContent = "";
+    e.preventDefault();
+  });
 }
-
