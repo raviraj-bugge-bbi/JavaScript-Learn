@@ -1,0 +1,66 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+#main-body {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px black solid;
+}
+
+#color-picker {
+    padding: 50px 100px 50px 100px;
+    border-radius: 10px;
+    position: absolute;
+    margin-bottom: 30%;
+    background-color: #15212B;
+    border: rgb(56, 68, 77) 2px solid;
+}
+
+#Empty-box {
+    padding: 50px 100px 50px 100px;
+    border-radius: 10px;
+    position: absolute;
+    margin-bottom: 10%;
+    background-color: #15212B;
+    border: rgb(56, 68, 77) 2px solid;
+    color: #15212B;
+}
+
+#color-picker-btn {
+    padding: 0px 0px;
+    box-sizing: content-box;
+    border-style: hidden;
+    background-color: transparent;
+    appearance: none;
+    height: 80px;
+    width: 150px;
+}
+
+.box {
+    height: 30;
+    width: 60;
+    background-color: rgb(255, 255, 255);
+    border: 2px;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+#pickHead, #placeHead{
+    background-color: transparent;
+    padding: 0px 0px 10px 30px;
+    margin: 0px;
+    color: #DDDDDD;
+}
+#darkMode{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 800px 0px;
+    background-color: #059862;
+    color: #DDDDDD;
+}
