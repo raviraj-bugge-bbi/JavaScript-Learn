@@ -11,7 +11,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 10px black solid;
 }
 
 #color-picker {
@@ -24,7 +23,7 @@ body {
 }
 
 #Empty-box {
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px 50px 100px; 
     border-radius: 10px;
     position: absolute;
     margin-bottom: 10%;
@@ -50,17 +49,18 @@ body {
     border: 2px;
     margin-right: 10px;
     padding: 3px;
+    cursor: default;
 }
 
-#pickHead, #placeHead{
+#pickHead,
+#placeHead {
     background-color: transparent;
     padding: 0px 0px 10px 30px;
     margin: 0px;
     color: #DDDDDD;
 }
-#darkMode{
+
+#darkMode {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 800px 0px;
-    background-color: #059862;
-    color: #DDDDDD;
+    margin: 200px 0px 0px 0px;
 }

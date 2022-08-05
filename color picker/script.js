@@ -1,15 +1,15 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded',placeColor);
+document.addEventListener('DOMContentLoaded', placeColor);
 
-function placeColor(){
-    document.getElementById("Empty-box").addEventListener('click',fillColor);
+function placeColor() {
+  document.getElementById("Empty-box").addEventListener('click', fillColor);
 
-    function fillColor(e){
-        if(e.target.className === 'box'){
-            e.target.style.backgroundColor = document.getElementById("color-picker-btn").value;
-        }
+  function fillColor(e) {
+    if (e.target.className === 'box') {
+      e.target.style.backgroundColor = document.getElementById("color-picker-btn").value;
     }
+  }
 }
 
 function darkMode() {
@@ -24,5 +24,12 @@ function darkMode() {
     document.getElementById("main-body").style.color = "#DDDDDD";
     document.getElementById("dbtn").value = "Dark Mode";
     localStorage.setItem('flag', '0');
+  }
+}
+
+function clearColor() {
+  const list = document.querySelectorAll(".box");
+  for (let x = 0; x < list.length; x++) {
+    list[x].style.backgroundColor = "white";
   }
 }
