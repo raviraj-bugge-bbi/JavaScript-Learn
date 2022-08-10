@@ -40,7 +40,7 @@ function validDetails() {
     document.getElementById("errorlname").style.visibility = "visible";
     return false;
   } else if (contact == "") {
-    /*----------------contact no: validation------------------------*/
+    /*----------------contact number validation------------------------*/
     document.getElementById("errorfname").style.color = "white";
     document.getElementById("errorfname").style.visibility = "hidden";
     document.getElementById("errorlname").style.color = "white";
@@ -117,10 +117,10 @@ function jsonFile() {
 function darkMode() {
   let flag = localStorage.getItem('flag');
   if (flag == 0) {
-    document.getElementById("body").style.backgroundColor = "black";
+    document.getElementById("body").style.backgroundColor = "#15212B";
     document.getElementById("body").style.color = "white";
     document.getElementById("dbtn").value = "Light Mode";
-    localStorage.setItem('flag', '1');
+    localStorage.setItem('flag', '1'); 
   } else {
     document.getElementById("body").style.backgroundColor = "white";
     document.getElementById("body").style.color = "black";
