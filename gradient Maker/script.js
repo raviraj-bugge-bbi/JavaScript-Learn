@@ -9,4 +9,3 @@ function select() {
         document.getElementById("codeCopy").innerText = "linear-gradient(to right," + firstColor.value + "," + secondColor.value + ")" + ";";
     }
 }
-
