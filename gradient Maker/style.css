@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+    }
   #main{
     margin-bottom: 200px;
   }
@@ -64,4 +64,20 @@ body {
     color: white;
     background-color: black;
     border-radius: 50px;
+  }
+
+  #codecpy{
+    margin: 60px 0px 0px 130px;
+    position: absolute;
+  }
+
+  #codeCopy{
+    background-color: #aeaeaed3;
+    border-radius: 5px;
+  }
+  #input{
+    position: relative;
+  }
+  #cpybtn{
+    margin: 0px 0px 0px 500px;
   }
