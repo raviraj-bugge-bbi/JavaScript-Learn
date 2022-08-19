@@ -11,6 +11,16 @@ body {
   justify-content: center;
 }
 
+textarea{
+  margin: 35% 0% 0px 0px;
+  height: 40px;
+  width: 150px;
+}
+button{
+  padding: 0px 10px 0px 0px;
+  margin: 665px 0px 0px 0px;
+}
+
 html {
   height: 100%;
 }

@@ -33,3 +33,5 @@ console.log(goodString.includes("a g"));
 console.log("_____startsWith() & endsWith()_____");
 //startsWith() checks if the string has matching string start and endsWith() checks if the string has matching end part
 console.log(goodString.startsWith("thi") && goodString.endsWith("ing"));
+
+
