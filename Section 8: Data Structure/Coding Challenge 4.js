@@ -23,6 +23,7 @@ function main() {
             let out = iterator.toLowerCase().trim().replace('_',' ');
             console.log(`${out.padEnd(20)} ${'✅'.repeat(index)}`);
             
+            
         }
     }
 }
