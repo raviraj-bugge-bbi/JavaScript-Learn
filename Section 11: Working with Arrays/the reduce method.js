@@ -9,6 +9,3 @@ let reducedArray = forReduce.reduce(function(acc,iterator,index,array){
     return iterator+acc;
 },100);
 console.log(reducedArray);
-'use strict` 
- console.log(------------Topic Name------------);
-`
