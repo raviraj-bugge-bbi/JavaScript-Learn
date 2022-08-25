@@ -67,16 +67,16 @@ const players1Final = [...players1, 'Thiago', 'Coutinho', 'Perisic'];
 console.log(players1Final);
 
 //
-const {team1,x:draw,team2}=game.odds;
-console.log(team1,draw,team2);
+const { team1, x: draw, team2 } = game.odds;
+console.log(team1, draw, team2);
 
 //
-function printGoals(...players){
+function printGoals(...players) {
     console.log(`${players.length} goals were scored`);
 }
 printGoals(...game.scored);
 
 //
-team1<team2 && console.log('team 1 wins');
-team1>team2 && console.log('team 2 wins');
+team1 < team2 && console.log('team 1 wins');
+team1 > team2 && console.log('team 2 wins');
 team1 == team2 && console.log('Draw');

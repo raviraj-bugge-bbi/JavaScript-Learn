@@ -4,12 +4,12 @@ console.log("---------Maps---------");
 
 const maps = new Map();
 
-maps.set("Name" , "Raviraj");
-maps.set("Last Name","Bugge");
-maps.set("in",1);
-maps.set("out",3);
-maps.set(true,"available");
-maps.set(false,"unavailable");
+maps.set("Name", "Raviraj");
+maps.set("Last Name", "Bugge");
+maps.set("in", 1);
+maps.set("out", 3);
+maps.set(true, "available");
+maps.set(false, "unavailable");
 
 console.log(maps);
 

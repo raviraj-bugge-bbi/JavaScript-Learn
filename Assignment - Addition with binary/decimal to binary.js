@@ -5,7 +5,7 @@ function DecToBin(x, y) {
     //////////////////////////////////////////////////////////////
     //////////////////// Decimal to Binary////////////////////////
     let div = x + y;
-    let quo;    
+    let quo;
     let rem;
     let str = "";
     while (div > 0) {

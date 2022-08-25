@@ -11,7 +11,7 @@ const airIndia = {
     price: "120$",
     book: function book(name, seat) {
         console.log(`${name} booked a flight of ${this.airline} ${this.code}, the seat number is  ${seat}, price - ${this.price}`);
-        this.bookings.push({ flight: `${this.airline} ${this.code} seat no. ${seat}`, name , cost:`${this.price}`});
+        this.bookings.push({ flight: `${this.airline} ${this.code} seat no. ${seat}`, name, cost: `${this.price}` });
 
     },
 };

@@ -2,17 +2,17 @@
 
 console.log("---------Higher order function-----------");
 
-function toLowerCase1(str){
+function toLowerCase1(str) {
     let string1 = str.toLowerCase();
     return string1;
 }
 
-function toUpperCase1(str){
+function toUpperCase1(str) {
     let string1 = str.toUpperCase();
     return string1;
 }
 
-function transformStr(newStr, fun){
+function transformStr(newStr, fun) {
     let transStr = fun(newStr);
     console.log(transStr);
 }

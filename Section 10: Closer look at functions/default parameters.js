@@ -26,22 +26,22 @@ console.log("--------------------------------------------");
 //////////////////////////////////////////////////////////////////////////////////
 
 const arrObject2 = {
-    name1 : "RAVIRAJ",
-    rollNum : 11
+    name1: "RAVIRAJ",
+    rollNum: 11
 }
 
 const lastName = "BUGGE";
 
-function funArray2 (name, lastName){
+function funArray2(name, lastName) {
 
-    console.log("Mr. "+name);
+    console.log("Mr. " + name);
     console.log(lastName);
 
-    if(name.rollNum === 11){
+    if (name.rollNum === 11) {
         console.log("present");
-    }else{
+    } else {
         console.log("absent ❌");
     }
 }
 
-funArray2(arrObject2,lastName);
+funArray2(arrObject2, lastName);

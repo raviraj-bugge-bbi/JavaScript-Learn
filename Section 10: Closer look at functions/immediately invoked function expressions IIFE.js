@@ -5,7 +5,7 @@ console.log("-----immediately invoked function expressions------");
 //////////////////////////////////////////////////
 //normal function
 
-(function(){
+(function () {
     console.log("hi!");
 })();
 

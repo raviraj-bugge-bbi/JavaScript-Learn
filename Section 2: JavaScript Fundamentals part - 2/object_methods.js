@@ -19,8 +19,7 @@ const jonas = {
 };
 
 console.log(
-  `${jonas.firstName} is a ${jonas.age()} year old ${
-    jonas.job
+  `${jonas.firstName} is a ${jonas.age()} year old ${jonas.job
   } and he ${jonas.hadDriverLicense()} drivers license.`
 );
 

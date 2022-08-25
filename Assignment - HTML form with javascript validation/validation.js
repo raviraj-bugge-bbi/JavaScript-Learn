@@ -120,7 +120,7 @@ function darkMode() {
     document.getElementById("body").style.backgroundColor = "#15212B";
     document.getElementById("body").style.color = "white";
     document.getElementById("dbtn").value = "Light Mode";
-    localStorage.setItem('flag', '1'); 
+    localStorage.setItem('flag', '1');
   } else {
     document.getElementById("body").style.backgroundColor = "white";
     document.getElementById("body").style.color = "black";

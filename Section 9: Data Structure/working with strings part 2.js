@@ -22,7 +22,7 @@ console.log("==========replace()===========");
 //replace() will replace the required string part
 //have to pass two parameters
 
-console.log(badString.toLowerCase().replace("bad","good"));
+console.log(badString.toLowerCase().replace("bad", "good"));
 
 console.log("=======booleans======");
 //will return true of false values

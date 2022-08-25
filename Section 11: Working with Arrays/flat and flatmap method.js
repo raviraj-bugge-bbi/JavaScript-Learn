@@ -1,10 +1,10 @@
 `use strict`;
 console.log(`------------Flat and FlatMap method------------`);
 
-let forFlat = [200, 450,[20,520], -400,[546,236], 3000, -650, -130, 70, 1300];
+let forFlat = [200, 450, [20, 520], -400, [546, 236], 3000, -650, -130, 70, 1300];
 console.log(forFlat);
 
-let forFlatNested = [200, 450,[20,520,[654,326,[641,932]]], -400,[546,236], 3000, -650, -130, 70, 1300];
+let forFlatNested = [200, 450, [20, 520, [654, 326, [641, 932]]], -400, [546, 236], 3000, -650, -130, 70, 1300];
 
 
 // flat method
@@ -15,7 +15,7 @@ console.log(forFlatNested.flat(3));
 
 //flatMap method
 
-let flatMapArray = forFlat.flatMap(function(iterator){
-    return iterator*2;
+let flatMapArray = forFlat.flatMap(function (iterator) {
+    return iterator * 2;
 })
 console.log(flatMapArray);

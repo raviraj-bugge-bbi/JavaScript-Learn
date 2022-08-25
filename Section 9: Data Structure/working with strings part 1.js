@@ -21,6 +21,6 @@ console.log("======slice()======");
 //slice() starts the the string from given index (can determine starting & ending index)
 //passing a -index will start the string from last elements
 console.log(string.slice(string.indexOf("a")));
-console.log(string.slice(string.lastIndexOf("h"),string.indexOf("e")));
+console.log(string.slice(string.lastIndexOf("h"), string.indexOf("e")));
 
 

@@ -3,8 +3,8 @@
 console.log("-------Coding Challenge 2--------");
 
 //
-for ([index,element] of game.scored.entries()) {
-    console.log(`Goal ${index + 1} : ${element}`);    
+for ([index, element] of game.scored.entries()) {
+    console.log(`Goal ${index + 1} : ${element}`);
 }
 
 //
@@ -22,5 +22,5 @@ console.log(avg);
 // Odd of victory Borrussia Dortmund: 6.5
 
 for (const x of odds) {
-    
+
 }

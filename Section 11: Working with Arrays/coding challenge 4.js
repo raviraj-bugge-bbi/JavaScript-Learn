@@ -74,11 +74,11 @@ let okay = dogs.filter(function (iterator) {
 console.log(okay);
 
 //
-let dogsSorted = dogs.slice().sort(function(a,b){
-    if(a.recommendedFood > b.recommendedFood){
+let dogsSorted = dogs.slice().sort(function (a, b) {
+    if (a.recommendedFood > b.recommendedFood) {
         return 1;
     }
-    if(a.recommendedFood < b.recommendedFood){
+    if (a.recommendedFood < b.recommendedFood) {
         return -1
     }
 });

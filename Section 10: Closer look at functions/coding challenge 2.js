@@ -7,7 +7,7 @@ console.log("----------Coding Challenge 2----------");
     const header = document.querySelector('h1');
     header.style.color = 'red';
 
-    document.querySelector('body').addEventListener('click', function(){
-        header.style.color =  "blue";
+    document.querySelector('body').addEventListener('click', function () {
+        header.style.color = "blue";
     });
 })();
