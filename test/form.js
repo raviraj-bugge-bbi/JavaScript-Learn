@@ -7,5 +7,4 @@ function openForm() {
   blur.forEach(function(tag){
     tag.setAttribute("style", "filter: blur(8px)");
   });
-  
 }

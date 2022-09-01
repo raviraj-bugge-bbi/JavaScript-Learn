@@ -1,0 +1,7 @@
+#images{
+    align-content: center;
+}
+.img{
+    display: none;
+    max-width: 100px;
+}
