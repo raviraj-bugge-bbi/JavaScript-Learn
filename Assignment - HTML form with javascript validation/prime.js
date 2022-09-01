@@ -1,17 +1,17 @@
-let flag = 0;
+// let flag = 0;
 
-for (let a = 2; a <= 20; a++) {
-    for (let b = 2; b <= a; b++) {
-        if (a % b == 0) {
-            flag += 1;
-        }
-    }
+// for (let a = 2; a <= 20; a++) {
+//     for (let b = 2; b <= a; b++) {
+//         if (a % b == 0) {
+//             flag += 1;
+//         }
+//     }
 
-    if (flag == 1) {
-        console.log(a);
-    }
-    flag = 0;
-}
+//     if (flag == 1) {
+//         console.log(a);
+//     }
+//     flag = 0;
+// }
 
 
 // if(flag > 1){

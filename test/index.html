@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #form1 {
+        border-style: solid;
+        border-color: black;
+        text-align: center;
+        padding: 10px 20px 30px 10px;
+        border-radius: 10px;
+      }
+      #div1 {
+        display: none;
+        height: 150%;
+        width: 30%;
+        position: fixed;
+        margin-left: 700px;
+        margin-top: 300px;
+      }
+    #body{
+      //background-image: url("https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    #btn1{
+      margin: 700px 0px 0px 50%;
+    }
+    </style>
+  </head>
+  <body id="body" class="apply">
+    <img src="https://c4.wallpaperflare.com/wallpaper/586/603/742/minimalism-4k-for-mac-desktop-wallpaper-preview.jpg" class="apply" style="background-repeat: no-repeat, background-size: cover" />
+    <div id="div1">
+      <form id="form1">
+        <h1>signup</h1>
+        <label for="Name">First Name: </label>
+        <input type="text" placeholder="enter your first name" /><br />
+        <br />
+        <label for="last name">Last Name: </label>
+        <input type="text" placeholder="enter your last name" /><br />
+        <br />
+        <label for="phn no">Phone No : </label>
+        <input type="text" placeholder="enter your phone number" /><br />
+        <br /><button>Sign up</button>
+      </form>
+    </div>
+    <button id="btn1" onclick="openForm()" class="apply">Signup</button>
+    <script type="text/javascript" src="form.js"></script>
+  </body>
+</html>
