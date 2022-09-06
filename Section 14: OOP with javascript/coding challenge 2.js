@@ -15,6 +15,7 @@ class CarCl {
     brake() {
         this.speed = this.speed - 5;
         console.log(`${this.make} going at ${this.speed - 5} Km/h`);
+        return this;
     }
 
     get speedUS(){
