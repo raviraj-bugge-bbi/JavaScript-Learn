@@ -29,7 +29,8 @@ html {
   height: 100%;
 }
 #btn{
-  margin-left: 550px;
+  position: fixed;
+  margin-left: 46%;
 }
 
 .typewriter h1 {
