@@ -13,4 +13,4 @@ console.log(`------------Promise & fetch API------------`);
 //     })
 // };
 
-// getAnime();
+// getAnime();  
