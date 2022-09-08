@@ -3,7 +3,23 @@
     padding: 0;
 }
 
-#main{
+body {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#main {
     display: flex;
 }
 
@@ -11,29 +27,63 @@
     width: 50%;
     background-image: url(Assets/projects.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #projects:hover {
-   filter: blur(5px);
-   transition: 1s ease-in-out;
+    /* filter: blur(5px);
+    transition: 1s ease-in-out; */
+    width: 100vh;
+    height: 80vh;
+
 }
 
 #tutorials {
     width: 50%;
     background-image: url(Assets/tutorials.jpg);
     background-size: cover;
-    height: 100vh;
-    height: 100vh;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* left: -20%;
+    position: absolute; */
 }
 
 #tutorials:hover {
-    filter: blur(5px);
-    transition: 1s ease-in-out;
+    /* filter: blur(5px);
+    transition: 1s ease-in-out; */
+    width: 100vh;
+    /* height: 80vh; */
+}
+
+.slide-right {
+    animation: 3s slide-right;
+}
+
+@keyframes slide-right {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+.slide-left {
+    animation: 3s slide-left;
+}
+
+@keyframes slide-left {
+    from {
+        margin-left: 1300%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
 }
