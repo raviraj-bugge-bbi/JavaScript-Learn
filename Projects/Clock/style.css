@@ -12,28 +12,14 @@ body {
     align-items: center;
 }
 
-#leftBox {
+#leftBox, #middleBox, #rightBox {
     color: white;
     background: #15212B;
     border-radius: 30px;
     text-align: center;
     font-size: 200px;
-}
-
-#middleBox {
-    color: white;
-    background: #15212B;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 200px;
-}
-
-#rightBox {
-    color: white;
-    background: #15212B;
-    border-radius: 30px;
-    text-align: center;
-    font-size: 200px;
+    padding: 0px 15px 0px 15px;
+    justify-content: center;
 }
 
 #dot1, #dot2 {
