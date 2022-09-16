@@ -11,32 +11,32 @@
 </head>
 
 <body id="body">
-    <div id="main">
+
+    <div id="heading">
         <h3 id="heding">Gradient Maker</h3>
-        <h4 id="choose">Choose colors</h4><br>
-        <div id="input">
-            <table id="table">
-                <tr>
-                    <td id="color1"><input class="hard" id="firstColor" type="color"></td>
-                    <td id="color2"><input class="hard" id="secondColor" type="color"></td>
-                </tr>
-                <tr>
-                    <td id="lable1"><label for="firstColor">First Color</label></td>
-                    <td id="lable2"><label for="secondColor">Second Color</label></td>
-                </tr>
-            </table>
-            <div id="apply">
-                <input type="submit" name="Apply" value="Apply" id="cbtn">
-            </div>
+        <h4 id="choose">Pick colors to make a Gradient</h4><br>
+    </div>
 
-                <!-- <div id="cpybtn">
-                    <button id="cpy">Copy</button>
-                </div> -->
-            <div id="codecpy">
-                <textarea id="codeCopy" rows="4" cols="60"></textarea>
-            </div>
+    <div id="inputColor">
 
+        <div class="pickColor">
+            <input class="color" type="color">
+            <label id="lable1" class="label" for="color">choose</label>
         </div>
+
+        <div class="pickColor">
+            <input class="color" type="color">
+            <label id="lable2" class="label" for="color">choose</label>
+        </div>
+
+    </div>
+
+    <div id="buttons">
+        <input type="submit" name="Apply" value="Apply" id="applyBtn">
+    </div>
+
+    <div id="textArea">
+        <textarea id="codeCopy" rows="4" cols="60"></textarea>
     </div>
 </body>
 
