@@ -55,8 +55,13 @@
   margin-top: 40px;
 }
 
-#textArea {
+#codeCopy {
   margin-top: 50px;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.516);
+  backdrop-filter: saturate(180%) blur(10px);
+  opacity: 0.3;
+  color: white;
 }
 
 
@@ -114,7 +119,7 @@ label {
   height: 40px;
   color: white;
   border-radius: 50px;
-  background: rgba(0, 0, 0, 0.516);
+  background: rgba(0, 0, 0, 0.332);
   backdrop-filter: saturate(180%) blur(10px);
   animation: gradient 10s ease infinite;
 }
