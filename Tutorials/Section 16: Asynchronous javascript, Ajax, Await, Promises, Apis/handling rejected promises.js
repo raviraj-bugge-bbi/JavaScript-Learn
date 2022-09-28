@@ -1,7 +1,7 @@
-`use strict`;
-console.log(`------------Handling Rejected Promises------------`);
+// `use strict`;
+// console.log(`------------Handling Rejected Promises------------`);
 
-const getAnime = function(){
+// const getAnime = function(){
 //     fetch(`https://aot-quotes-api.herokuapp.com/random`).then(
 //         function(data){
 //             console.log(data);
@@ -13,6 +13,6 @@ const getAnime = function(){
 //         document.querySelector("#qut").textContent = `${data2.quote}`;
 //     })//.catch(err => alert(err)) // <- using catch method we can handle an error that happend at any point while executing
 //     .finally(console.log("every went fine!"))
-};
+// };
 
-getAnime();
+// getAnime();
