@@ -50,9 +50,10 @@ body::-webkit-scrollbar {
     color: black;
 }
 
-img{
+#logoImg{
     color: aliceblue;
-    width: 4vw;
+    position: relative;
+    size: 5px;
 }
 
 #navLinks {
@@ -71,6 +72,11 @@ img{
 .navItems:hover {
     background-color: #f0f8ff;
     border-radius: 2px;
+}
+
+#quote{
+    justify-content: center;
+    align-items: center;
 }
 
 /* ------------------------------------------------------------- */
