@@ -1,6 +1,8 @@
 `use strict`;
 console.log(`------------------------`);
 
-// function blur(){
-//     parent.open()
-// }
+if document.body.scrollTop <= 0 {
+    alert ("scrolling down")
+} else {
+    alert ("scrolling up")
+}

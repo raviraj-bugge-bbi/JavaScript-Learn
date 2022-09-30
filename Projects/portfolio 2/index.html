@@ -14,17 +14,17 @@
     <title>PORTFOLIO</title>
 </head>
 
-<body>
+<body onmousewheel="myFunction(event)">
     <div id="main">
         <nav id="navBar">
             <div id="logo">
                 <img src="" alt="LOGO">
             </div>
             <div id="navContent">
-                <span class="navContent home">HOME</span>
-                <span class="navContent gallery">GALLERY</span>
-                <span class="navContent about">ABOUT ME</span>
-                <span class="navContent contact">CONTACT</span>
+                <span class="home"><a href="#home" class="navContent">HOME</a></span>
+                <span class="gallery"><a href="#gallery" class="navContent">GALLERY</a></span>
+                <span class="about"><a href="#about" class="navContent">ABOUT ME</a></span>
+                <span class="contact"><a href="#contact" class="navContent">CONTACT</a></span>
             </div>
         </nav>
         <div id="home">
@@ -40,16 +40,19 @@
                 </svg>
             </div>
         </div>
-        <div id="gallery">
-            <h3>gallery</h3>
+        <div id="gallery" id="1">
+            <h3><a href="gallery.html">gallery</a></h3>
         </div>
-        <div id="about">
+        <div id="about" id="2">
             <h3>about</h3>
         </div>
-        <div id="contact">
+        <div id="contact" id="3">
             <h3>contact</h3>
         </div>
     </div>
+
+    <script src="script.js"></script>
+    
 </body>
 
 </html>
