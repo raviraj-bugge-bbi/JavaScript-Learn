@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #E7E9EB;
+}
 #main-body{
     height: 100vh;
     display: flex;
@@ -46,4 +51,13 @@
     background-color: transparent;
     color: #DDDDDD;
     text-align: center;
+}
+
+#darkMode{
+    margin-top: 1%;
+}
+
+#dbtn, #cbtn{
+    padding: 1px 2px;
+    border-radius: 5px;
 }
