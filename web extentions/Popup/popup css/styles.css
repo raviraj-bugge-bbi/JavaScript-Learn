@@ -1,0 +1,79 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+
+    background-color: #1a1a1d;
+}
+
+#body {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 50px 0px 50px;
+    width: 100%;
+    height: auto;
+
+    font-family: 'Ubuntu';
+
+    color: aliceblue;
+}
+
+h1 {
+    width: 100%;
+    align-items: center;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+#colorPickerDiv {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    width: 50%;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #9581f4, #23a6d5, #23d5ab);
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+}
+
+.color {
+    width: 100px;
+    height: 100px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.color::-webkit-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #000000;
+}
+
+.color::-moz-color-swatch {
+    border-radius: 50%;
+    border: 2px solid #000000;
+}

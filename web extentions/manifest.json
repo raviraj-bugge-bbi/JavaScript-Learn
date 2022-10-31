@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Color Picker",
+    "description": "Pick any color from anywhere!",
+    "version": "2.0",
+    "icons": {
+        "16": "/Images/favicon-16x16.png",
+        "48": "/Images/favicon-32x32.png",
+        "128": "/Images/android-chrome-192x192.png"
+    },
+    "action": {
+        "default_popup": "Popup/index.html"
+    }
+}

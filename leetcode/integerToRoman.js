@@ -2,13 +2,11 @@
 console.log(`------------Integer to Roman------------`);
 
 function romanToInt(intVal) {
-    var romanToInt = [["M", 1000], ["D", 500], ["C", 100], ["L", 50], ["X", 10], ["V", 5], ["I", 1]];
-    // console.log(romanToInt);
+    const romanToInt = new Map([["I", 1], ["IV", 4], ["V", 5], ["IX", 9], ["X", 10], ["XL", 40], ["L", 50], ["XC"]["C", 100], ["CD", 400], ["D", 500], ["CM", 900], ["M", 1000]]);
+    numStr = intVal.toString();
+
     var newNumStr = [];
     var romanNum = [];
-
-    numStr = intVal.toString();
-    // num = intVal;
 
     for (let i = numStr.length - 1; i >= 0; i--) {
         let lastNum = parseInt(numStr.slice(i, numStr.length));
@@ -23,23 +21,13 @@ function romanToInt(intVal) {
     newNumStr.reverse();
     console.log(newNumStr);
 
-    for (let i = 0; i < romanToInt.length; i++) {
-        if (romanToInt[i][1] == newNumStr[i]) {
-            romanNum.push(romanToInt[i][0]);
-            // console.log(romanNum);
-        }
-        for (let j = i + 1; j < romanToInt.length; i++) {
-            if ((romanToInt[i][1] - romanToInt[j][1]) == newNumStr[i]) {
-                romanNum.push(romanToInt[j][0]);
-                romanNum.push(romanToInt[i][0]);
-            }
-        }
-    }
+    // for(let i = 0; i<newNumStr.length;i++){
+    //     if()
+    // }
+
+
 
     console.log(romanNum);
-
-
-
 }
 
 romanToInt(1994);
